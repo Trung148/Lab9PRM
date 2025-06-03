@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contextual_delete" android:title="Delete"/>
+    <item android:id="@+id/contextual_share" android:title="Share"/>
+</menu>
