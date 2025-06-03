@@ -40,9 +40,9 @@ class Activity : AppCompatActivity() {
     // Options Menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.options_menu, menu)
+        menuInflater.inflate(R.menu.menu_example, menu) // Add this line
         return true
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.option_search -> {
@@ -51,6 +51,18 @@ class Activity : AppCompatActivity() {
             }
             R.id.option_upload -> {
                 toast("Option Menu: Upload clicked")
+                true
+            }
+            R.id.mail -> {
+                toast("Menu Example: Mail clicked")
+                true
+            }
+            R.id.upload -> {
+                toast("Menu Example: Upload clicked")
+                true
+            }
+            R.id.share -> {
+                toast("Menu Example: Share clicked")
                 true
             }
             else -> super.onOptionsItemSelected(item)
